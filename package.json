@@ -14,5 +14,10 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "@sbb-esta/angular-core": "^11.0.3",
+        "@sbb-esta/angular-icons": "^11.0.3",
+        "@sbb-esta/angular-public": "^11.0.3"
     }
 }
