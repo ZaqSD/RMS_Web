@@ -16,6 +16,7 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "@angular/cdk": "^11.2.0",
         "@sbb-esta/angular-core": "^11.0.3",
         "@sbb-esta/angular-icons": "^11.0.3",
         "@sbb-esta/angular-public": "^11.0.3"

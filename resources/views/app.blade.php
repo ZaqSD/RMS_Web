@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RMS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-</head>
-<body style="background-color: #FFFFFF">
-    <!-- As a link -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fahrplan</a>
-        </div>
-    </nav>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- As a heading -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Navbar</span>
-        </div>
-    </nav>
-    <div class="container">
+        <title>RMS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href={{asset('css/app.css')}}>
+    </head>
+
+    <body style="background-color: #FFFFFF">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item topNavbarItem active">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                    <li class="nav-item topNavbarItem active">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item topNavbarItem active">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <div class="nav-item" style="float: right;">
+                        <li class="nav-item active">
+                            <img src="img/logo/RMS_1x.png" alt="Logo" width="300" height="75">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar cNavbar navbar-expand-md navbar-light bg-light">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active bottomNavbarItem">
+                        <a class="nav-link" style="color:black" href="#">Home</a>
+                    </li>
+                    <li class="nav-item bottomNavbarItem">
+                        <a class="nav-link" style="color:black" href="#">Timetable</a>
+                    </li>
+                    <li class=" nav-item bottomNavbarItem">
+                        <a class="nav-link" style="color:black" href="#">Next Departs</a>
+                    </li>
+                    <li class="nav-item bottomNavbarItem">
+                        <a class="nav-link" style="color:black" href="#">Tickets</a>
+                    </li>
+                    <li class="nav-item bottomNavbarItem">
+                        <a class="nav-link" style="color:black" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div style="height: 40px;"></div>
 
         @yield('content')
+    </body>
 
-    </div>
-</body>
 </html>

@@ -1,0 +1,164 @@
+input,
+label {
+    display: block;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+.cBtnPrimary {
+    background-color: #2d327d;
+    border: none;
+    font-size: 25px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.cBtnPrimary:hover {
+    background-color: #191964;
+    border: none;
+    font-size: 25px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.cBtnSecondary {
+    background-color: #cccccc;
+    border: none;
+    font-size: 25px;
+    color: black;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.cBtnSecondary:hover {
+    background-color: #b7b7b7;
+    border: none;
+    font-size: 25px;
+    color: black;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.cBtnRadio {
+    background-color: white;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: #2d327d;
+    font-size: 25px;
+    color: #2d327d;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cBtnRadio:hover {
+    background-color: rgb(213, 214, 229);
+    border-width: 3px;
+    border-radius: 0px;
+    border-color: #2d327d;
+    font-size: 25px;
+    color: #2d327d;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.cBtnRadio:active {
+    background-color: red;
+    border-width: 3px;
+    border-radius: 0px;
+    border-color: #2d327d;
+    font-size: 25px;
+    color: #2d327d;
+    width: 400px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.loginBox {
+    background-color: white;
+    border-radius: 0;
+    border-color: black;
+    border-width: 4px;
+    /*box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);*/
+}
+
+.textField {
+    background-color: white;
+    border-radius: 0;
+    border-color: #8d8d8d;
+    border-width: 3px;
+    font-size: 22px;
+    margin: 2px;
+}
+
+.textField:hover {
+    background-color: white;
+    border-radius: 0;
+    border-color: #686868;
+    border-width: 3px;
+    font-size: 22px;
+    margin: 2px;
+}
+
+.cNavbar {
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topNavbarItem {
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #8d8d8d;
+    font-size: 18px;
+}
+
+.bottomNavbarItem {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 25px;
+}
