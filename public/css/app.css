@@ -239,3 +239,21 @@ p {
     padding-bottom: 10px;
 }
 
+#depSearch {
+    background-color: white;
+    border-radius: 0;
+    border-color: #8d8d8d;
+    border-width: 5px;
+    font-size: 22px;
+    margin: 2px;
+}
+
+#depSearch:hover {
+    background-color: #e5e5e5;
+    border-radius: 0;
+    border-color: #686868;
+    border-width: 5px;
+    font-size: 22px;
+    margin: 2px;
+}
+

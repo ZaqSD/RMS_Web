@@ -40,7 +40,7 @@
                         <a class="nav-link" style="color:black; width: 175px;" href="/timetable">Timetable</a>
                     </li>
                     <li class=" nav-item bottomNavbarItem-175">
-                        <a class="nav-link" style="color:black; width: 175px;" href="#">Next Departs</a>
+                        <a class="nav-link" style="color:black; width: 175px;" href="/departs">Next Departs</a>
                     </li>
                     <li class="nav-item bottomNavbarItem-100">
                         <a class="nav-link" style="color:black; width: 100px;" href="#">Tickets</a>
