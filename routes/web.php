@@ -21,6 +21,10 @@ Route::get('/depart', function() {
     return view ('depart');
 });
 
+Route::get('/info', function() {
+    return view ('info');
+});
+
 Route::get('/register', function() {
     return view ('register');
 });
@@ -31,4 +35,8 @@ Route::get('/tickets', function() {
 
 Route::get('/timetable', function() {
     return view ('timetable');
+});
+
+Route::get('/widgets', function() {
+    return view ('widgets');
 });

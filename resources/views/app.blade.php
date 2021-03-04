@@ -16,28 +16,13 @@
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item topNavbarItem active">
-                        <a class="nav-link" href="#">Info</a>
+                        <a class="nav-link" href="/info">Info</a>
+                    </li>
+                    <li class=" nav-item topNavbarItem active">
+                        <a class="nav-link" href="/settings">Settings</a>
                     </li>
                     <li class="nav-item topNavbarItem active">
-                        <a class="nav-link" href="#">Settings</a>
-                    </li>
-                    <li class="nav-item topNavbarItem active">
-                        <a class="nav-link" href="#">Profile</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="topNavbarItem dropbtn">Dropdown</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
+                        <a class="nav-link" href="/profile">Profile</a>
                     </li>
                 </ul>
                 <div class="d-flex nav-item">
@@ -48,14 +33,17 @@
         <nav class="navbar cNavbar navbar-expand-md navbar-light bg-light">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item bottomNavbarItem">
-                        <a class="nav-link" style="color:black" href="#">Timetable</a>
+                    <li class="nav-item bottomNavbarItem-100">
+                        <a class="nav-link" style="color:black; width: 100px;" href="/widgets">Home</a>
                     </li>
-                    <li class=" nav-item bottomNavbarItem">
-                        <a class="nav-link" style="color:black" href="#">Next Departs</a>
+                    <li class="nav-item bottomNavbarItem-175">
+                        <a class="nav-link" style="color:black; width: 175px;" href="/timetable">Timetable</a>
                     </li>
-                    <li class="nav-item bottomNavbarItem">
-                        <a class="nav-link" style="color:black" href="#">Tickets</a>
+                    <li class=" nav-item bottomNavbarItem-175">
+                        <a class="nav-link" style="color:black; width: 175px;" href="#">Next Departs</a>
+                    </li>
+                    <li class="nav-item bottomNavbarItem-100">
+                        <a class="nav-link" style="color:black; width: 100px;" href="#">Tickets</a>
                     </li>
                 </ul>
             </div>
