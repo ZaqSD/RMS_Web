@@ -39,7 +39,7 @@ p {
     border: none;
     font-size: 25px;
     color: white;
-    height: 50px;
+    height: 51px;
     margin: 2px;
     text-decoration: none;
     text-align: center;
@@ -52,7 +52,7 @@ p {
     border: none;
     font-size: 25px;
     color: white;
-    height: 50px;
+    height: 51px;
     margin: 2px;
     text-decoration: none;
     text-align: center;
@@ -65,7 +65,6 @@ p {
     border: none;
     font-size: 25px;
     color: black;
-    width: 400px;
     height: 50px;
     margin: 2px;
     text-decoration: none;
@@ -79,7 +78,6 @@ p {
     border: none;
     font-size: 25px;
     color: black;
-    width: 400px;
     height: 50px;
     margin: 2px;
     text-decoration: none;
@@ -142,16 +140,16 @@ p {
     border-color: #8d8d8d;
     border-width: 3px;
     font-size: 22px;
-    margin: 2px;
+    margin: 0px;
 }
 
 .textField:hover {
-    background-color: white;
+    background-color: #e5e5e5;
     border-radius: 0;
     border-color: #686868;
     border-width: 3px;
     font-size: 22px;
-    margin: 2px;
+    margin: 0px;
 }
 
 .cNavbar {

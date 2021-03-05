@@ -17,21 +17,15 @@
                 <div>
                     <button class="col-lg-4 btn cBtnPrimary ms-0 ps-0">Search</button>
                 </div>
+                <div id="widTimResults"></div>
             </div>
 
         </div>
         <div class="col-lg-6">
             <div class="infobox">
                 <h2>Tickets</h2>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a class="btn btn-light cBtnSecondary" href="/tickets/history">History</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="btn btn-light cBtnSecondary" href="/tickets/history">Show All</a>
-                    </div>
-                </div>
-                <h3>Icons</h3>
+                <a class="col-lg-5 btn btn-light cBtnSecondary" href="/tickets/history">History</a>
+                <a class="col-lg-5 btn btn-light cBtnSecondary" href="/tickets/history">Show All</a>
             </div>
             <div style="height: 10px;"></div>
             <div class="infobox">

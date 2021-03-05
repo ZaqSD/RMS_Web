@@ -4,12 +4,13 @@
 <div class="container">
     <h1>Next Departs</h1>
     <div class="row">
-        <div class="col-lg-11">
-            <input type="text" class="form-control textField" id="depSearch" name="depSearch" placeholder=" Search Station">
+        <div class="col-lg-10 pe-0">
+            <input type="text" class="form-control textField" placeholder=" Search Station">
+
         </div>
-        <div class="col-lg-1">
-            <button class="btn btn-light cBtnPrimary">Search</button>
-        </div>
+
+        <button class="col-lg-1 btn btn-light cBtnPrimary mx-0 px-0 my-0 py-0">Search</button>
+
     </div>
     <div>
         <table class="table table-borderless">

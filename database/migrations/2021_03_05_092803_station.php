@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Fares extends Migration
+class Station extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class Fares extends Migration
      */
     public function up()
     {
-        Schema::create('fare', function (Blueprint $table) {
+        Schema::create('station', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('name');
-            $table->string('description');
-            $table->double('price_chf');
-            $table->double('price_eur');
+            $table->string('staName');
+            $table->double('staX');
+            $table->double('staY');
+            $table->int('staWeight');
         });
     }
 
