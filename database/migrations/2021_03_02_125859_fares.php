@@ -13,7 +13,7 @@ class Fares extends Migration
      */
     public function up()
     {
-        Schema::create('fare', function (Blueprint $table) {
+        Schema::create('fares', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('name');
             $table->string('description');

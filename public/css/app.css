@@ -52,7 +52,7 @@ p {
     border: none;
     font-size: 25px;
     color: white;
-    height: 50px;
+    height: 51px;
     margin: 2px;
     text-decoration: none;
     text-align: center;
@@ -149,7 +149,7 @@ p {
     border-color: #686868;
     border-width: 3px;
     font-size: 22px;
-    margin: 2px;
+    margin: 0px;
 }
 
 .cNavbar {
@@ -237,6 +237,17 @@ p {
     padding-bottom: 10px;
 }
 
+.zoom {
+    height: 200px;
+    overflow: hidden;
+}
+.zoom img {
+    transition: transform 0.5s ease;
+}
+.zoom:hover img {
+    transform: scale(1.5);
+}
+
 #depSearch {
     background-color: white;
     border-radius: 0;
@@ -253,5 +264,10 @@ p {
     border-width: 5px;
     font-size: 22px;
     margin: 2px;
+}
+
+#mapAllBtn {
+    height: 60px;
+    width: 400px;
 }
 

@@ -12,29 +12,31 @@
     </head>
 
     <body style="background-color: #FFFFFF">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item topNavbarItem active">
-                        <a class="nav-link" href="/info">Info</a>
-                    </li>
-                    <li class=" nav-item topNavbarItem active">
-                        <a class="nav-link" href="/settings">Settings</a>
-                    </li>
-                    <li class="nav-item topNavbarItem active">
-                        <a class="nav-link" href="/profile">Profile</a>
-                    </li>
-                </ul>
-                <div class="d-flex nav-item">
-                    <img src="img/logo/RMS_1x.png" alt="Logo" width="300" height="75">
-                </div>
+        <!--
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item topNavbarItem active">
+                    <a class="nav-link" href="/info">Info</a>
+                </li>
+                <li class=" nav-item topNavbarItem active">
+                    <a class="nav-link" href="/settings">Settings</a>
+                </li>
+                <li class="nav-item topNavbarItem active">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
+            </ul>
+            <div class="d-flex nav-item">
+                <img src="img/logo/RMS_1x.png" alt="Logo" width="300" height="75">
             </div>
-        </nav>
+        </div>
+    </nav>
+    -->
         <nav class="navbar cNavbar navbar-expand-md navbar-light bg-light">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item bottomNavbarItem-100">
-                        <a class="nav-link" style="color:black; width: 100px;" href="/widgets">Home</a>
+                        <a class="nav-link" style="color:black; width: 100px;" href="/">Home</a>
                     </li>
                     <li class="nav-item bottomNavbarItem-175">
                         <a class="nav-link" style="color:black; width: 175px;" href="/timetable">Timetable</a>
@@ -43,14 +45,21 @@
                         <a class="nav-link" style="color:black; width: 175px;" href="/departs">Next Departs</a>
                     </li>
                     <li class="nav-item bottomNavbarItem-100">
-                        <a class="nav-link" style="color:black; width: 100px;" href="#">Tickets</a>
+                        <a class="nav-link" style="color:black; width: 100px;" href="/maps">Maps</a>
+                    </li>
+                    <li class="nav-item bottomNavbarItem-100">
+                        <a class="nav-link" style="color:black; width: 100px;" href="/info">Info</a>
                     </li>
                 </ul>
+                <div class="d-flex nav-item">
+                    <img src="img/logo/RMS_1x.png" alt="Logo" width="300" height="75">
+                </div>
             </div>
         </nav>
         <div style="height: 40px;"></div>
 
         @yield('content')
     </body>
+    <script src={{asset('js/app.js')}}></script>
 
 </html>

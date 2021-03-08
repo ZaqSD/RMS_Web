@@ -13,12 +13,12 @@ class Station extends Migration
      */
     public function up()
     {
-        Schema::create('station', function (Blueprint $table) {
+        Schema::create('stations', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('staName');
             $table->double('staX');
             $table->double('staY');
-            $table->int('staWeight');
+            $table->integer('staWeight');
         });
     }
 

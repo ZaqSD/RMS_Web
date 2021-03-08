@@ -14,9 +14,7 @@
                 <div class="col-lg-4 me-0 pe-0 ms-0 ps-0">
                     <input type="text" class="form-control textField" id="wTimStart" name="wTimDestination" placeholder="Destination">
                 </div>
-                <div>
-                    <button class="col-lg-4 btn cBtnPrimary ms-0 ps-0">Search</button>
-                </div>
+                <button class="col-lg-3 btn cBtnPrimary ms-0 ps-0 my-0" onclick="test()">Search</button>
                 <div id="widTimResults"></div>
             </div>
 

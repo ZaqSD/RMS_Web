@@ -237,6 +237,17 @@ p {
     padding-bottom: 10px;
 }
 
+.zoom {
+    height: 200px;
+    overflow: hidden;
+}
+.zoom img {
+    transition: transform 0.5s ease;
+}
+.zoom:hover img {
+    transform: scale(1.5);
+}
+
 #depSearch {
     background-color: white;
     border-radius: 0;
