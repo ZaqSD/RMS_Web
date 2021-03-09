@@ -41,6 +41,16 @@ Route::get('/tickets', function() {
     return view ('ticket');
 });
 
+Route::get('/tickets/select', function() {
+    return view ('buySelect');
+});
+
+Route::get('/tickets/select/buy', function() {
+    return view ('buyBuy');
+});
+
+Route::post('/tickets/select/buy/verificate', [TicketController::class, 'save']);
+
 Route::get('/timetable', function() {
     return view ('timetable');
 });

@@ -7,9 +7,9 @@
   \*****************************/
 /***/ (() => {
 
-function test() {
+window.test = function () {
   alert("Hallo");
-}
+};
 
 /***/ }),
 

@@ -14,23 +14,25 @@ class TicketController extends Controller
 
     public function save( Request $request){
 
-        Blog::create([
+        $name = $request->ticNameOfPerson;
+        $line = $request->linId;
+
+        Ticket::create([
             'farId' => $request->farId,
             'linId' => $request->linId,
+            'ticNameOfPerson' => $request->ticNameOfPerson,
             'ticStart' => $request->ticStart,
             'ticDestination' => $request->ticDestination,
             'validated' => $request->validated
         ]);
 
-        return view('verificationRD', [
-            'blogs' => Blog::all()
+        return view('verification', [
+            'tickets' => Ticket::where( "ticNameofPerson", '=', $name)->where("linId", "=", $line)->get()
         ]);
-
-        return redirect( '/' );
     } 
 
     public function show($id) {
-        return view('welcome', [
+        return view('verification', [
             'blogs' => Blog::all()
         ]);
     }

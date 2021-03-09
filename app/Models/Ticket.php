@@ -9,6 +9,7 @@ class Ticket extends Model
 {
     use HasFactory;
 
-    protected $fillable = [ 'farId', 'linId', 'ticNameOfPerson', 'ticStart', 'ticDestination', 'validated' ];
+    public $fillable = [ 'farId', 'linId', 'ticNameOfPerson', 'ticStart', 'ticDestination', 'validated' ];
 
+    
 }
