@@ -15,9 +15,8 @@ class StationTimetable extends Migration
     {
         Schema::create('stationTimetable', function (Blueprint $table) {
             $table->id()->unique();
-            $table->foreignId('staId')->constrained('stations');
             $table->foreignId('linId')->constrained('lines');
-            $table->foreignId('nexId')->constrained('nextStations');
+            $table->string('timStaName');
             $table->double('timTimeOnArrival');
             $table->integer('timTimeonDeparture');
             $table->string('timPlatform');

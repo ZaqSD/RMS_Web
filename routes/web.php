@@ -17,9 +17,11 @@ Route::get('/', function () {
     return view('widgets');
 });
 
-Route::get('/departs', function() {
+Route::get('/departs', function () {
     return view ('departs');
 });
+
+Route::get('/departs{id}', [TimetableController::class, 'load']);
 
 Route::get('/info', function() {
     return view ('info');
