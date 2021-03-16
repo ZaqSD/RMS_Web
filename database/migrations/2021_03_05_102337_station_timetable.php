@@ -15,10 +15,10 @@ class StationTimetable extends Migration
     {
         Schema::create('stationTimetable', function (Blueprint $table) {
             $table->id()->unique();
-            $table->foreignId('linId')->constrained('lines');
+            $table->foreignId('linId')->constrained('routes');
             $table->string('timStaName');
-            $table->double('timTimeOnArrival');
-            $table->integer('timTimeonDeparture');
+            $table->time('timTimeOnArrival');
+            $table->time('timTimeOnDeparture');
             $table->string('timPlatform');
         });
     }

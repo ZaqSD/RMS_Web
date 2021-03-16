@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TimetableController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +18,9 @@ Route::get('/', function () {
     return view('widgets');
 });
 
-Route::get('/departs', function () {
-    return view ('departs');
-});
+Route::get('/departs', [TimetableController::class, 'list']);
 
-Route::get('/departs{id}', [TimetableController::class, 'load']);
+//Route::get('/departs/{id}', [TimetableController::class, 'load']);
 
 Route::get('/info', function() {
     return view ('info');

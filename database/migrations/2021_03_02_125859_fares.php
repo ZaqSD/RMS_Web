@@ -19,6 +19,7 @@ class Fares extends Migration
             $table->string('description');
             $table->double('price_chf');
             $table->double('price_eur');
+            $table->time('valid');
         });
     }
 

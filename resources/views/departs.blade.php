@@ -22,12 +22,16 @@
                 </tr>
             </thead>
             <tbody>
+                @isset($StationTimetables)
+                @foreach($StationTimetables as $stationTimetable)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">{{ $stationTimetable->timTimeOfDepature}}</th>
+                    <td>{{ $stationTimetable->lines}}</td>
+                    <td></td>
+                    <td>{{ $stationTimetable->timPlatform}}</td>
                 </tr>
+                @endforeach
+                @endisset
             </tbody>
         </table>
     </div>

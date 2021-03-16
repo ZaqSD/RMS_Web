@@ -16,7 +16,7 @@ class Ticket extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id()->unique();
             $table->foreignId('farId')->constrained('fares');
-            $table->foreignId('linId')->constrained('lines');
+            $table->foreignId('linId')->constrained('routes');
             $table->string('ticNameOfPerson');
             $table->string('ticStart');
             $table->string('ticDestination');
