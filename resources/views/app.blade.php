@@ -35,28 +35,28 @@
     <nav class="navbar cNavbar navbar-expand-md navbar-light bg-light">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item bottomNavbarItem-100">
-                    <a class="nav-link" style="color:black; width: 100px;" href="/">Home</a>
+                <li class="nav-item bottomNavbarItem-150">
+                    <a class="nav-link bottonNavbarItemText-150" href="/">Timetable</a>
                 </li>
-                <li class="nav-item bottomNavbarItem-175">
-                    <a class="nav-link" style="color:black; width: 175px;" href="/timetable">Timetable</a>
+                <li class="nav-item bottomNavbarItem-100">
+                    <a class="nav-link bottonNavbarItemText-100" href="/tickets">Tickets</a>
                 </li>
                 <li class=" nav-item bottomNavbarItem-175">
-                    <a class="nav-link" style="color:black; width: 175px;" href="/departs">Next Departs</a>
+                    <a class="nav-link" style="width: 175px; padding-right: 5px;" href="/departs">Next Departs</a>
                 </li>
                 <li class="nav-item bottomNavbarItem-100">
-                    <a class="nav-link" style="color:black; width: 100px;" href="/maps">Maps</a>
+                    <a class="nav-link bottonNavbarItemText-100" href="/maps">Maps</a>
                 </li>
                 <li class="nav-item bottomNavbarItem-100">
-                    <a class="nav-link" style="color:black; width: 100px;" href="/info">Info</a>
+                    <a class="nav-link bottonNavbarItemText-100" href="/info">Info</a>
                 </li>
             </ul>
             <div class="d-flex nav-item">
-                <img src="{{asset('img/logo/RMS_1x.png')}}"" alt=" Logo" width="300" height="75">
+                <img src="{{asset('img/logo/RMS_1x.png')}}" alt=" Logo" width="300" height="75">
             </div>
         </div>
     </nav>
-    <div style="height: 40px;"></div>
+    <div id="filler-40"></div>
 
     @yield('content')
 </body>

@@ -25,7 +25,8 @@
                 @isset($StationTimetables)
                 @foreach($StationTimetables as $stationTimetable)
                 <tr>
-                    <th scope="row">{{ $stationTimetable->timTimeOfDepature}}</th>
+                    <th scope="row">IC1-55784</th>
+                    <td>{{ $stationTimetable->timTimeOfDepature}}</td>
                     <td>{{ $stationTimetable->lines}}</td>
                     <td></td>
                     <td>{{ $stationTimetable->timPlatform}}</td>

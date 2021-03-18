@@ -11,7 +11,8 @@ class StationTimetable extends Model
 
     protected $table = 'stationTimetable';
 
-    public $fillable = [ 'linId',
+    public $fillable = [
+    'linId',
     'timStaName',
     'timTimeOnArrival',
     'timTimeOnDeparture',

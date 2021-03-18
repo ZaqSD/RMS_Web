@@ -34,15 +34,15 @@ Route::get('/maps/all', function() {
     return view ('imgAll');
 });
 
+Route::get('/maps/zhs', function() {
+    return view ('imgZhs');
+});
+
 Route::get('/register', function() {
     return view ('register');
 });
 
 Route::get('/tickets', function() {
-    return view ('ticket');
-});
-
-Route::get('/tickets/select', function() {
     return view ('buySelect');
 });
 
@@ -55,6 +55,8 @@ Route::post('/tickets/select/buy/verificate', [TicketController::class, 'save'])
 Route::get('/timetable', function() {
     return view ('timetable');
 });
+
+Route::get('/timetable/results', [ConnectionController::class, 'find']);
 
 Route::get('/widgets', function() {
     return view ('widgets');

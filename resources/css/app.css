@@ -187,6 +187,7 @@ p {
     color: black;
     font-size: 25px;
     text-align: center;
+    width: 100px;
 }
 
 .bottomNavbarItem-100::after {
@@ -194,14 +195,40 @@ p {
     position: absolute;
     display: block;
     height: 3px;
-    width: 0%;
     background-color: #2d327d;
     bottom: 1em;
-    transition: all ease-in-out 450ms;
+    transition: all ease-in-out 350ms;
+    width: 0px;
 }
 
 .bottomNavbarItem-100:hover::after {
     width: 100px;
+}
+
+.bottomNavbarItem-150 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 150px;
+}
+
+.bottomNavbarItem-150::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    background-color: #2d327d;
+    bottom: 1em;
+    transition: all ease-in-out 350ms;
+    width: 0px;
+}
+
+.bottomNavbarItem-150:hover::after {
+    width: 150px;
 }
 
 .bottomNavbarItem-175 {
@@ -212,6 +239,7 @@ p {
     color: black;
     font-size: 25px;
     text-align: center;
+    width: 175px;
 }
 
 .bottomNavbarItem-175::after {
@@ -219,22 +247,62 @@ p {
     position: absolute;
     display: block;
     height: 3px;
-    width: 0%;
     background-color: #2d327d;
     bottom: 1em;
-    transition: all ease-in-out 450ms;
+    transition: all ease-in-out 350ms;
+    width: 0px;
 }
 
 .bottomNavbarItem-175:hover::after {
     width: 175px;
 }
 
+.bottonNavbarItemText-100 {
+    color: black;
+    width: 100px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+bottonNavbarItemText-150 {
+    color: black;
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+bottonNavbarItemText-175 {
+    color: black;
+    width: 175px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filler-40 {
+    height: 40px;
+}
 .infobox {
     background-color: #dcdcdc;
     padding-left: 10px;
     padding-top: 5px;
     padding-right: 0px;
     padding-bottom: 10px;
+}
+
+.msgBox {
+    background-color: #dcdcdc;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .zoom {
@@ -246,6 +314,11 @@ p {
 }
 .zoom:hover img {
     transform: scale(1.5);
+}
+
+#buyBuyBtn {
+    height: 80px;
+    padding: 20px;
 }
 
 #depSearch {
@@ -264,4 +337,8 @@ p {
     border-width: 5px;
     font-size: 22px;
     margin: 2px;
+}
+
+#infTitleBox {
+    padding-top: 0px;
 }
