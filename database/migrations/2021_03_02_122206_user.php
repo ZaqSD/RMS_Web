@@ -14,7 +14,7 @@ class User extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id()->unique();
+            $table->id();
             $table->string('prename');
             $table->string('name');
             $table->date('bday');
@@ -25,6 +25,7 @@ class User extends Migration
             $table->string('city');
             $table->string('country');
             $table->string('state');
+            $table->timestamps();
         });
     }
 

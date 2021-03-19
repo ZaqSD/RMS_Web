@@ -14,11 +14,12 @@ class Line extends Migration
     public function up()
     {
         Schema::create('routes', function (Blueprint $table) {
-            $table->id()->unique();
+            $table->id();
             $table->string('linType');
             $table->string('linTag');
             $table->string('linStart');
             $table->string('linDestination');
+            $table->timestamps();
         });
     }
 

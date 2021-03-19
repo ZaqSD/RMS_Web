@@ -14,13 +14,13 @@ class Ticket extends Migration
     public function up()
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->id()->unique();
-            $table->foreignId('farId')->constrained('fares');
+            $table->id();
             $table->foreignId('linId')->constrained('routes');
             $table->string('ticNameOfPerson');
             $table->string('ticStart');
             $table->string('ticDestination');
             $table->timestamp('validated');
+            $table->timestamps();
         });
     }
 

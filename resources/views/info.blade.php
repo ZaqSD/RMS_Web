@@ -19,13 +19,18 @@
             <h3>Version</h3>
             <p>0.4B (9)</p>
             <h3>Last updated</h3>
-            <p><?php echo now(); ?></p>
+            <p>19/03/2021</p>
         </div>
         <div class="col-lg-6">
             <div class="infobox">
                 <h2>Ressources from</h2>
                 <h3>Icons</h3>
                 <img src="img/logos/SBB_black.png" alt="Logo der SBB" height="32">
+            </div>
+            <div class="filler-10"></div>
+            <div class="infobox">
+                <h2>Development Process</h2>
+                <img src="img/life.jpg" alt="My life is a chaos" height="500">
             </div>
         </div>
     </div>

@@ -15,13 +15,8 @@ class TimetableController extends Controller
         $station = 'Genève Aéroport';//session('depStationName');
 
         return view('departs', [
-            'StationTimetables' => StationTimetable::where('timStaName', $station)->get(),
-            'Route' => Route::where('linId', 'StationTimetable'->linId)->get()
+            'StationTimetables' => StationTimetable::where('timStaName', $station)->get()
         ]);
-
-
-        //
-
 
     }
 

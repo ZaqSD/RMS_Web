@@ -13,13 +13,14 @@ class StationTimetable extends Migration
      */
     public function up()
     {
-        Schema::create('stationTimetable', function (Blueprint $table) {
-            $table->id()->unique();
+        Schema::create('stationtimetable', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('linId')->constrained('routes');
             $table->string('timStaName');
             $table->time('timTimeOnArrival');
             $table->time('timTimeOnDeparture');
             $table->string('timPlatform');
+            $table->timestamps();
         });
     }
 

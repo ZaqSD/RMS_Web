@@ -15,29 +15,22 @@ class ConnectionController extends Controller
         $start = session('wTimStart');
         $destination = session('wTimDestination');
 
-        $starts = [
-            'starts' => StationTimetable::where('timStaName', $start)->get(),
-        ];
+        $starts = StationTimetable::where('timStaName', $start)->get();
         
-        $festinations = [
-            'destinations' => StationTimetable::where('timStaName', $destination)->get(),
-        ];
+        $destinations = StationTimetable::where('timStaName', $destination)->get();
 
-        $results = [
-            'results'
-        ];
+        $results = collect();
 
         foreach($starts as $start){
             foreach($destinations as $destination){
                 if( $start->linId == $destination->linId ){
-                    return view('buyBuy', ['results' => StationTimetable::where('linId','10101')]);
-                    //$results->results => StationTimetable::where('linId', '10101');
+                    $results->put($start);
                 }
             }
         }
-
-        return view('buyBuy', $results);
-
+        return view('result', $results);
+        //USerCOntroller vom Auth
+                    //$results->results => StationTimetable::where('linId', '10101');
     }
 
 }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TimetableController;
+use App\Http\Controllers\ConnectionController;
+use App\Http\Controllers\TicketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,9 @@ use App\Http\Controllers\TimetableController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/*Route::middleware( ['auth'] )->group( function(){*/
+
 
 Route::get('/', function () {
     return view('widgets');
@@ -46,9 +51,11 @@ Route::get('/tickets', function() {
     return view ('buySelect');
 });
 
-Route::get('/tickets/select/buy', function() {
-    return view ('buyBuy');
+Route::get('/tickets/verify', function() {
+    return view ('verification');
 });
+
+Route::post('/tickets/select/buy', [TicketController::class, 'save']);
 
 Route::post('/tickets/select/buy/verificate', [TicketController::class, 'save']);
 
@@ -61,3 +68,5 @@ Route::get('/timetable/results', [ConnectionController::class, 'find']);
 Route::get('/widgets', function() {
     return view ('widgets');
 });
+
+/*});*/

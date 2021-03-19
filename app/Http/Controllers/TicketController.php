@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ticket;
 
 class TicketController extends Controller
 {
@@ -14,20 +15,21 @@ class TicketController extends Controller
 
     public function save( Request $request){
 
-        $name = $request->ticNameOfPerson;
-        $line = $request->linId;
+        $name = $request->buyName;
+        $line = $request->buyId;
+        $start = $request->buyStart;
+        $destination = $request->buyDestination;
 
         Ticket::create([
-            'farId' => $request->farId,
-            'linId' => $request->linId,
-            'ticNameOfPerson' => $request->ticNameOfPerson,
-            'ticStart' => $request->ticStart,
-            'ticDestination' => $request->ticDestination,
+            'linId' => $line,
+            'ticNameOfPerson' => $name,
+            'ticStart' => 'Hi',
+            'ticDestination' => 'Hi',
             'validated' => $request->validated
         ]);
 
-        return view('verification', [
-            'tickets' => Ticket::where( "ticNameofPerson", '=', $name)->where("linId", "=", $line)->get()
+        return view('buyBuy', [
+            'tickets' => Ticket::where( "ticNameofPerson", '=', $name)->where("linId", "=", $line)->first()
         ]);
     } 
 

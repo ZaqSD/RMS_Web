@@ -4,20 +4,33 @@
 <div class="container">
     <h1>Add Information</h1>
     <div class="col-lg">
-        <form method="POST" action="../../app/Http/Controllers/ConnectionController.php">
+        <form method="POST" action="/tickets/select/buy">
+            @csrf
             <div class="container">
                 <div class="row">
                     <div class="col-lg">
-                        <label class="form" for="buyId"><b>Name</b></label>
+                        <label class="form" for="buyName"><b>Name</b></label>
                         <input type="text" class="form-control textField" id="buyName" name="buyName" placeholder="Name">
                     </div>
                     <div class="col-lg-2">
                         <label class="form" for="buyId"><b>Train-Nr</b></label>
                         <input type="text" class="form-control textField" id="buyId" name="buyId" placeholder="00000">
                     </div>
-                    <div style="height: 20px;"></div>
+                    <div class="filler-20"></div>
                     <div class="col-lg"></div>
-                    <a class="col-lg cBtnPrimary" style="height: 60px; padding: 10px;" href="/tickets/select/buy">Continue</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <input type="text" class="form-control textField" id="buyStart" name="buyStart" placeholder="Start">
+                    </div>
+                    <div class="col-lg">
+                        <input type="text" class="form-control textField" id="buyDestination" name="buyDestination" placeholder="Destination">
+                    </div>
+                </div>
+                <div class="filler-20"></div>
+                <div class="row">
+                    <div class="col-lg"></div>
+                    <button class="col-lg cBtnPrimary" id="buyBuyBtn" style="height: 60px; padding: 10px;"><b>Buy for 4.90 CHF</b></a>
                 </div>
             </div>
         </form>

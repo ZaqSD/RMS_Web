@@ -15,9 +15,10 @@
         <table class="table table-borderless">
             <thead>
                 <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Train-Nr</th>
                     <th scope="col">Departure</th>
                     <th scope="col">Destination</th>
-                    <th scope="col">Stops</th>
                     <th scope="col">Platform</th>
                 </tr>
             </thead>
@@ -25,10 +26,10 @@
                 @isset($StationTimetables)
                 @foreach($StationTimetables as $stationTimetable)
                 <tr>
-                    <th scope="row">IC1-55784</th>
-                    <td>{{ $stationTimetable->timTimeOfDepature}}</td>
-                    <td>{{ $stationTimetable->lines}}</td>
-                    <td></td>
+                    <td width="60px"><img src="/img/line/product-ic-1.png"></td>
+                    <th scope="row" width="150px">IC1-{{ $stationTimetable->linId }}</td>
+                    <td>{{ $stationTimetable->timTimeOnDepature}}</td>
+                    <td>Zürich Hbf</td>
                     <td>{{ $stationTimetable->timPlatform}}</td>
                 </tr>
                 @endforeach

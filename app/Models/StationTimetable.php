@@ -9,7 +9,7 @@ class StationTimetable extends Model
 {
     use HasFactory;
 
-    protected $table = 'stationTimetable';
+    protected $table = 'stationtimetable';
 
     public $fillable = [
     'linId',

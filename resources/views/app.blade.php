@@ -56,6 +56,15 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="filler-40"></div>
+        <div class="msgBox">
+            <h3>Warning - Limited Service</h3>
+            <p>
+                All Lines are closed, except IC1 (Genève Aéroport <-> Zürich Hbf)<br>
+                    All Stations are closed, except for Bern, Fribourg/Freiburg, Genéve, Genève Aéroport, Lausanne, Zürich Hbf</p>
+        </div>
+    </div>
     <div id="filler-40"></div>
 
     @yield('content')

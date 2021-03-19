@@ -8,9 +8,9 @@
         <h3>Name:</h3><br>
         <p></p>
         <h3>Route:</h3><br>
-        <p>{{ $results->linId }}</p>
+        <p>{{ $tickets->linId }}</p>
         <div class="row">
-            <a class="col-lg cBtnPrimary" id="buyBuyBtn" href="/tickets/select/buy"><b>Buy for 4.90 CHF</b></a>
+            <a class="col-lg cBtnPrimary" id="buyBuyBtn2" href="/tickets/verify"><b>Buy for 4.90 CHF</b></a>
             <div class="col-lg"></div>
         </div>
     </div>
