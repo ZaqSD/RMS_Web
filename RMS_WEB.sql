@@ -24,12 +24,12 @@ INSERT INTO routes (id, linType, linTag, linStart, linDestination) VALUES('10106
 
 
 
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Basel', '03:00', '06:30', '4');
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Olten', '06:37', '06:40', '6');
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Luzern', '07:16', '07:20', '1');
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Zug', '08:01', '08:02', '3');
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Bellinzona', '08:25', '08:29', '7');
-INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Lugano', '09:26', '03:00', '33');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Genève Aéroport', '03:00', '06:30', '4');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Genève', '06:37', '06:40', '6');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Lausanne', '07:16', '07:20', '1');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Fribourg/Freiburg', '08:01', '08:02', '3');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Bern', '08:25', '08:29', '7');
+INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10101', 'Zürich Hbf', '09:26', '03:00', '33');
 
 INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10102', 'Zürich Hbf', '03:00', '06:30', '32');
 INSERT INTO stationTimetable (linId, timStaName, timTimeOnArrival, timTimeOnDeparture, timPlatform) VALUES('10102', 'Bern', '07:26', '07:32', '3');

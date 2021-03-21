@@ -23,13 +23,13 @@ class TicketController extends Controller
         Ticket::create([
             'linId' => $line,
             'ticNameOfPerson' => $name,
-            'ticStart' => 'Hi',
-            'ticDestination' => 'Hi',
+            'ticStart' => $start,
+            'ticDestination' => $destination,
             'validated' => $request->validated
         ]);
 
         return view('buyBuy', [
-            'tickets' => Ticket::where( "ticNameofPerson", '=', $name)->where("linId", "=", $line)->first()
+            'tickets' => Ticket::where( "ticNameofPerson", '=', $name)->where("linId", "=", $line)->orderBy('id', 'desc')->first()
         ]);
     } 
 

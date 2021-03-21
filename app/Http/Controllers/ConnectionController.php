@@ -11,24 +11,27 @@ use App\Models\Ticket;
 class ConnectionController extends Controller
 {
 
-    public function find() {
-        $start = session('wTimStart');
-        $destination = session('wTimDestination');
+    public function find( Request $request ) {
+        $iStart = $request->wTimStart;
+        $iDestination = $request->wTimDestination;
 
-        $starts = StationTimetable::where('timStaName', $start)->get();
+        $starts = StationTimetable::where('timStaName', $iStart)->get();
         
-        $destinations = StationTimetable::where('timStaName', $destination)->get();
-
-        $results = collect();
+        $destinations = StationTimetable::where('timStaName', $iDestination)->get();
 
         foreach($starts as $start){
             foreach($destinations as $destination){
                 if( $start->linId == $destination->linId ){
-                    $results->put($start);
+                    session(['linId' => $start->linId]);
+                    session(['TimeOnDeparture' => $start->timTimeOnDeparture]);
+                    session(['Platform' => $start->timPlatform]);
+                    break;
                 }
             }
         }
-        return view('result', $results);
+
+        return view('result');
+        //return view('result', ['results' => $results->all()]);
         //USerCOntroller vom Auth
                     //$results->results => StationTimetable::where('linId', '10101');
     }

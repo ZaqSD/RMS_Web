@@ -63,7 +63,7 @@ Route::get('/timetable', function() {
     return view ('timetable');
 });
 
-Route::get('/timetable/results', [ConnectionController::class, 'find']);
+Route::post('/timetable/results', [ConnectionController::class, 'find']);
 
 Route::get('/widgets', function() {
     return view ('widgets');

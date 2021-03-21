@@ -7,22 +7,25 @@
         <div class="col-lg-6 infobox">
             <div class="infobox" style="padding-top: 0px;"></div>
             <h2>Timetable</h2>
-            <div class="row">
-                <div class="col-lg-4 me-0 pe-0">
-                    <input type="text" class="form-control textField" id="wTimStart" name="wTimStart" placeholder="Start">
+            <form method="POST" action="/timetable/results">
+                @csrf
+                <div class="row">
+                    <div class="col-lg-4 me-0 pe-0">
+                        <input type="text" class="form-control textField" id="wTimStart" name="wTimStart" placeholder="Start">
+                    </div>
+                    <div class="col-lg-4 me-0 pe-0 ms-0 ps-0">
+                        <input type="text" class="form-control textField" id="wTimDestination" name="wTimDestination" placeholder="Destination">
+                    </div>
+                    <button class="col-lg-3 btn cBtnPrimary ms-0 ps-0 my-0">Search</a>
                 </div>
-                <div class="col-lg-4 me-0 pe-0 ms-0 ps-0">
-                    <input type="text" class="form-control textField" id="wTimDestination" name="wTimDestination" placeholder="Destination">
-                </div>
-                <a href="/timetable/results" class="col-lg-3 btn cBtnPrimary ms-0 ps-0 my-0">Search</a>
-                <div id="widTimResults"></div>
-            </div>
-
+            </form>
         </div>
         <div class="col-lg-6">
             <div class="infobox">
                 <h2>Good Day :)</h2>
-                <h3>It is the <?php echo now()?></h3>
+                <h3>It is the
+                    <?php echo now()?>
+                </h3>
             </div>
             <div style="height: 10px;"></div>
             <div class="infobox">

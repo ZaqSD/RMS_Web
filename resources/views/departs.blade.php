@@ -24,15 +24,20 @@
             </thead>
             <tbody>
                 @isset($StationTimetables)
-                @foreach($StationTimetables as $stationTimetable)
+                <!--@foreach($StationTimetables as $stationTimetable)-->
                 <tr>
                     <td width="60px"><img src="/img/line/product-ic-1.png"></td>
                     <th scope="row" width="150px">IC1-{{ $stationTimetable->linId }}</td>
                     <td>{{ $stationTimetable->timTimeOnDepature}}</td>
+                    @if($loop->odd)
                     <td>Zürich Hbf</td>
+                    @endif
+                    @if($loop->even)
+                    <td>Genève Aéroport</td>
+                    @endif
                     <td>{{ $stationTimetable->timPlatform}}</td>
                 </tr>
-                @endforeach
+                <!--@endforeach-->
                 @endisset
             </tbody>
         </table>
