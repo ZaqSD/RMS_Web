@@ -3,6 +3,7 @@
 
 <div class="container">
     <h1>Timetable - Results</h1>
+    <h2>{{ session()->get('start') }} -> {{ session()->get('destination') }}</h2>
     <div>
         <table class="table table-borderless">
             <thead>

@@ -15,6 +15,9 @@ class ConnectionController extends Controller
         $iStart = $request->wTimStart;
         $iDestination = $request->wTimDestination;
 
+        session(['start' => $iStart]);
+        session(['destination' => $iDestination]);
+
         $starts = StationTimetable::where('timStaName', $iStart)->get();
         
         $destinations = StationTimetable::where('timStaName', $iDestination)->get();

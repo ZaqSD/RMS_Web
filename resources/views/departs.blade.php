@@ -6,7 +6,7 @@
     <form>
         <div class="row">
             <div class="col-lg-10 pe-0">
-                <input type="text" class="form-control textField" placeholder=" Search Station" id="depStationName">
+                <input type="text" class="form-control textField" placeholder=" Search Station" id="depStationName" name="depStationName">
             </div>
             <button class="col-lg-1 btn btn-light cBtnPrimary mx-0 px-0 my-0 py-0">Search</button>
         </div>
